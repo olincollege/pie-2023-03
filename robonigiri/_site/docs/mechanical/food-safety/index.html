@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+
+
+
+
+<html
+ dir="ltr"
+ lang="en"
+ >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content=#ffffff>
+    <link rel="stylesheet" href="/pie-2023-03/robonigiri/assets/css/app.css">
+    <link rel="shortcut icon" type="image/png"
+           href="https://i.imgur.com/QuEpqQb.png" 
+    />
+    <script defer src="https://unpkg.com/alpinejs@3.9.0/dist/cdn.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css">
+    
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Food Safety | Robonigiri</title>
+<meta name="generator" content="Jekyll v3.9.3" />
+<meta property="og:title" content="Food Safety" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Project documentation site for the first automatic onigiri maker." />
+<meta property="og:description" content="Project documentation site for the first automatic onigiri maker." />
+<link rel="canonical" href="http://localhost:4000/pie-2023-03/robonigiri/docs/mechanical/food-safety/" />
+<meta property="og:url" content="http://localhost:4000/pie-2023-03/robonigiri/docs/mechanical/food-safety/" />
+<meta property="og:site_name" content="Robonigiri" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Food Safety" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Project documentation site for the first automatic onigiri maker.","headline":"Food Safety","url":"http://localhost:4000/pie-2023-03/robonigiri/docs/mechanical/food-safety/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <!-- head scripts --></head>
+
+  <body>
+    <nav class="navbar is-primary " x-data="{ openNav: false }">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="/pie-2023-03/robonigiri/" class="navbar-item">
+                Robonigiri
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
+            <div class="navbar-start">
+                <a href="/pie-2023-03/robonigiri/" class="navbar-item ">Home</a>
+                
+                
+                    
+                    <a href="/pie-2023-03/robonigiri/docs/" class="navbar-item ">Our System</a>
+                    
+                
+                    
+                    <div class="navbar-item has-dropdown is-hoverable ">
+                        <a href="/pie-2023-03/robonigiri/" class="navbar-link ">Admin Docs</a>
+                        <div class="navbar-dropdown">
+                            
+                            <a href="/pie-2023-03/robonigiri/expenses/" class="navbar-item ">Finances</a>
+                            
+                            <a href="/pie-2023-03/robonigiri/gallery/" class="navbar-item ">Image Gallery</a>
+                            
+                            <a href="/pie-2023-03/robonigiri/reviews/" class="navbar-item ">Sprint Reviews</a>
+                            
+                            <a href="/pie-2023-03/robonigiri/feedback/" class="navbar-item ">Feedback</a>
+                            
+                            <a href="/pie-2023-03/robonigiri/management/" class="navbar-item ">Project Management</a>
+                            
+                        </div>
+                    </div>
+                    
+                
+                    
+                    <a href="/pie-2023-03/robonigiri/blog/" class="navbar-item ">Sprints</a>
+                    
+                
+                    
+                    <a href="/pie-2023-03/robonigiri/web_ui/" class="navbar-item ">Order Onigiri</a>
+                    
+                
+                    
+                    <a href="/pie-2023-03/robonigiri/about-us/" class="navbar-item ">About Us</a>
+                    
+                
+                
+            </div>
+
+
+        </div>
+    </div>
+</nav>
+
+    
+        <section class="hero  is-medium  is-bold is-primary" >
+    <div class="hero-body ">
+        <div class="container">
+            <h1 class="title is-2">Food Safety</h1>
+            <p class="subtitle is-3">Product Research</p>
+            
+        </div>
+    </div>
+</section>
+    
+    
+
+
+    <section class="section">
+        <div class="container">
+            <div class="columns is-multiline">
+                
+                <div class="column is-4-desktop is-4-tablet">
+                    
+
+<aside class="menu">
+
+    <p class="menu-label">Mechanical Design</p>
+    <ul class="menu-list">
+        
+        <li>
+            <a href="/pie-2023-03/robonigiri/docs/mechanical/part-1/" class="">Part 1</a>
+            
+        </li>
+        
+        <li>
+            <a href="/pie-2023-03/robonigiri/docs/mechanical/part-2/" class="">Part 2</a>
+            
+        </li>
+        
+        <li>
+            <a href="/pie-2023-03/robonigiri/docs/mechanical/part-3/" class="">Part 3</a>
+            
+        </li>
+        
+        <li>
+            <a href="/pie-2023-03/robonigiri/docs/mechanical/part-4/" class="">Part 4</a>
+            
+        </li>
+        
+        <li>
+            <a href="/pie-2023-03/robonigiri/docs/mechanical/food-safety/" class="is-active">Food Safety</a>
+            
+        </li>
+            
+    </ul>
+
+    <p class="menu-label">Electrical Design</p>
+    <ul class="menu-list">
+        
+        <li>
+            <a href="/pie-2023-03/robonigiri/docs/electrical/servo/" class="">Servo Integration</a>
+            
+        </li>
+        
+        <li>
+            <a href="/pie-2023-03/robonigiri/docs/electrical/elec-schematic/" class="">Schematic</a>
+            
+        </li>
+            
+    </ul>
+
+    <p class="menu-label">Firmware</p>
+    <ul class="menu-list">
+        
+        <li>
+            <a href="/pie-2023-03/robonigiri/docs/firmware/algorithm/" class="">Gradual Compression Loop</a>
+            
+        </li>
+        
+        <li>
+            <a href="/pie-2023-03/robonigiri/docs/firmware/debouncing/" class="">Debouncing</a>
+            
+        </li>
+        
+        <li>
+            <a href="/pie-2023-03/robonigiri/docs/firmware/serial/" class="">Serial Interface</a>
+            
+        </li>
+            
+    </ul>
+
+    <p class="menu-label">Software</p>
+    <ul class="menu-list">
+        
+        <li>
+            <a href="/pie-2023-03/robonigiri/docs/software/arduino-wifi/" class="">Arduino with WiFi</a>
+            
+        </li>
+        
+        <li>
+            <a href="/pie-2023-03/robonigiri/docs/software/web-ui/" class="">Setting up Web UI</a>
+            
+        </li>
+        
+        <li>
+            <a href="/pie-2023-03/robonigiri/docs/software/soft-schematic/" class="">Schematic</a>
+            
+        </li>
+            
+    </ul>
+
+    <p class="menu-label">Full Demo</p>
+    <ul class="menu-list">
+        
+        <li>
+            <a href="/pie-2023-03/robonigiri/docs/demo/" class="">Video</a>
+            
+        </li>
+        
+        <li>
+            <a href="/pie-2023-03/robonigiri/docs/" class="">System Control</a>
+            
+        </li>
+            
+    </ul>
+
+</aside>
+                </div>
+                
+                <div class="column is-8">
+                    
+                    
+
+                    
+                    
+                    
+<div class="content">
+    <p>Since we are working with food in our design, we decided that it would be best if
+we did some research into food compliant materials, as we didn’t want to make a
+product that would harm our customers in the long term.</p>
+
+<h2 id="filament-material">Filament Material</h2>
+<p>We began by looking into the different types of 3D printer filament and whether
+they were food-safe. This was an important step in our design process as
+the majority of our parts were 3D printed, so we needed to ensure that any parts
+touching the food were either printed from the most food-safe option or change
+our design so the rice somehow did not need to touch the 3D-printed parts.</p>
+
+<h3 id="pla">PLA</h3>
+<p>The first material we looked into was PLA, one of the more common 3D printing materials. At a standard temperature, it is food safe, and there are no issues when it comes to food contact. At temperatures greater than 60 degrees celcius, the plastic can distort which could cause interference with the soft rice. This could cause problems for the overall rigidity and consistency of our system.</p>
+
+<h3 id="tpu">TPU</h3>
+<p>TPU is another material which we considered using to print our pieces. It is also food safe and non toxic, meaning it would be suitable if it came in contact with our rice at any time. TPU is also resistant to oil, grease and stains, which means that any lubricant would not seep into the build and compromise it. However, it is a lot more expensive to use, and may not be compatible with all the printers available to us. If we decided to use this, the main issue would be compatibility.</p>
+
+<h3 id="abs">ABS</h3>
+<p>The last material we looked at was ABS. ABS is also FDA approved for food safety, meaning that it wouldn’t cause any issues when using it with the rice. It can also handle hot temperatures, meaning the limitations of heat in PLA would not apply here. Unfortunately as ABS is a non standard resource for our printers, there would be similar compatibility issue.</p>
+
+<p>Taking into account all of these potential dangers, we decided to stick with PLA. Our rationale for for this was that we would purchase a food safe mold that would handle the compression and formation of the rice, meaning that there would be no 3D printed part in contact with the onigiri at any point. PLA is also perfectly food safe in our intended environment anyways, the potential warping at temperatures above 60 degrees celcius wouldn’t apply here.</p>
+
+<h2 id="3d-printing-risks">3D-Printing Risks</h2>
+
+<p>While researching we realized that 3D printing carries its own risks which can cause bacteria to brew. The printing bed can be a petri dish for bacteria if it is not cleaned regularly and thoroughly and the several holes caused by the natural additive printing process means that there are plenty of air gaps for bacteria to settle during printing.</p>
+
+<p>To make sure that our pieces were safe for printing, we followed the following steps for each piece we printed:</p>
+
+<ol>
+  <li>Disinfecting and cleaning the bed.</li>
+  <li>Ensuring that the nozzle we use was stainless steel to prevent lead from entering the piece.</li>
+  <li>Cleaning the inside of the printer through a cold pull.</li>
+  <li>Wiping down the finished part with an antibacterial food-safe wipe before integrating it into our final design.</li>
+</ol>
+
+</div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    
+        <footer class="footer">
+    <div class="container">
+        
+        
+        <div class="columns is-multiline">
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/pie-2023-03/robonigiri/" class="link">Home</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/pie-2023-03/robonigiri/blog/" class="link">Blog</a>
+                </div>
+            </div>
+            
+            <div class="column has-text-centered">
+                <div>
+                    <a href="/pie-2023-03/robonigiri/privacy-policy/" class="link">About Us</a>
+                </div>
+            </div>
+            
+        </div>
+        
+
+        <div class="content is-small has-text-centered">
+            <p class="">Site hosted on <a href="https://github.com/olincollege/robonigiri">GitHub</a></p>
+        </div>
+    </div>
+</footer>
+
+    
+    <script src="/pie-2023-03/robonigiri/assets/js/app.js" type="text/javascript"></script><!-- footer scripts --></body>
+</html>
