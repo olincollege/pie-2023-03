@@ -166,6 +166,8 @@ textarea {
 
 body {
   -ms-overflow-style: scrollbar;
+  scrollbar-color: red orange;
+  scrollbar-width: thin;
 }
 
 @media screen and (max-width: 480px) {
