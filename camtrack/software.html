@@ -55,10 +55,10 @@
     </nav>
 
     <div class="container sec-title">
-      <div class="card mx-auto img-fluid section-card" style="background-color: gray;">
+      <div class="card mx-auto img-fluid section-card" style="background-color: black;">
           <h1 class="card-text" style="color:white; font-size: 50px;">Software Design</h1>
       </div>
-    </div>
+  </div>
 
 
     <div class="overview">
@@ -71,7 +71,7 @@
         <div class="col">
           <img src="assets/final_prod_assets/picamera.jpg" style="width: 100%">
         </div>
-        <div class="col-5">
+        <div class="col-5 d-flex align-items-center">
           <p>
             We first access the Raspberry Pi's camera through the python picamera2 module. In order to read the camera,
             we use the module to save the current frame as a NumPy array every timestep. The image's colorspace
@@ -108,7 +108,7 @@
         <div class="col">
           <img src="assets/sprint_3_detect.gif" style="width: 100%">
         </div>
-        <div class="col-6">
+        <div class="col-6 d-flex align-items-center">
           <p>To resolve this, we also initiate a tracking step, which takes the detected bounding box as an input. Unlike object detection,
             object tracking uses the previous frame to estimate the change in pixels over time. This allows it to continue to track a 
             detected person, without needing to expend the computational energy to re-detect the subject every frame. As a result,
@@ -127,7 +127,7 @@
       <h4>Stepper Motor Logic</h4>
       <br>
       <div style="text-align: center;">
-        <img src="assets/sprint_3_code_structure.PNG" style="width: 60%;">
+        <img src="assets/sprint_3_code_structure.PNG" style="width: 30%;">
       </div>
       <br>
       <p>
