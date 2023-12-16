@@ -25,6 +25,8 @@ We made a mechanical mirror, which is a mechanical display that displays anyone 
 
 ## Example Video:
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/98xqTyCnihM?si=X8l4SJlZaNW46-1X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/2gRm41Kkecs?si=DTeYSFWUNzqtunST" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 <br>
 <br>
 </center><iframe width="560" height="315" src="https://www.youtube.com/embed/98xqTyCnihM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
