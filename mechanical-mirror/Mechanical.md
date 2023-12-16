@@ -4,12 +4,8 @@ Walk through the Sprints and explain the ideation process and build methods, wha
 
 
 # Basic Design used for all sprints.
-<div style="text-align: center;">
-  
+
 ![A simple diagram demonstrating the basic design working principles](https://raw.githubusercontent.com/mcuevas-olin/pie-2023-03/gh-pages/mechanical-mirror/Images/MMMechanismPrinciples.png "Mechanism Principles Diagram")
-
-</div>
-
 
 Our basic design consists of a grid of drum-shaped pixels with integrated gears that rotate to change what color is currently exposed to a viewer. The axis of rotation is parallel to the X axis (if X is left-right, Y is up down and Z is pointing out of the plane of the mirror). On the back of the mirror, a gantry mechanism flips pixels column by column to display an image, by rotating each to display a desired state.
 
