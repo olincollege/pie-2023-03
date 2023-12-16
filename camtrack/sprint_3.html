@@ -29,7 +29,7 @@
               </a>
               <ul class="dropdown-menu">
                 <li style="margin-left:0px"><a class="dropdown-item" href="mechanical.html">Mechanical Design</a></li>
-                <li style="margin-left:0px"><a class="dropdown-item" href="electrical.html">Electrical and Firmware Design</a></li>
+                <li style="margin-left:0px"><a class="dropdown-item" href="electrical.html">Electrical & Firmware Design</a></li>
                 <li style="margin-left:0px"><a class="dropdown-item" href="software.html">Software Design</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li style="margin-left:0px"><a class="dropdown-item" href="budget.html">Bill of Materials</a></li>
@@ -46,7 +46,9 @@
                 <li style="margin-left:0px"><a class="dropdown-item" href="sprint_3.html">Sprint 3</a></li>
               </ul>
             </li>
-            
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -71,7 +73,7 @@
             picture-in-picture; web-share" allowfullscreen>
           </iframe>
         </div>
-        <div class="col-5">
+        <div class="col-md-5 d-flex align-items-center">
           <p>The goal for this sprint was to finish fabrication of the tripod as well as integrating everything. The tripod was finished, software
             was refined to have faster response time and less delay, and electrical began experimenting with the new driving RC motor.
           </p>
@@ -83,16 +85,25 @@
         <h3>Mechanical</h3>
         <br>
         <div class="row">
-            <div class="col-3">
-                <img src="assets/mech_sprint_1.JPG" style="height:auto; width:350px;">
-                <figcaption>Sketch model of the initial design</figcaption>
+            <div class="col text-center">
+                <img src="assets/sprint3_mech_gears.png" style="width:100%;">
+                <figcaption><b>Gear System for Panning</b></figcaption>
             </div>
-            <div class="col-3">
-              <img src="assets/mech_sprint_1_enclosure.JPG" style="height:auto; width:350px;">
-              <figcaption>Electronics enclosure box with servo attached to the rotating rod</figcaption>
+            <div class="col text-center">
+              <img src="assets/sprint3_tripod.png" style="height:auto; width:100%;">
+              <figcaption><b>Overall Mechanical Setup for Tripod</b></figcaption>
             </div>
             <div class="col-6">
-                <p>made tripod idk
+                <p>
+                  During Sprint 3, our focus centered on electrical integration for the camera system. We achieved the foundational structure for the tripod, pan-tilt mechanism, and added wheels. However, minor fastening issues arose due to a lack of communication within the mechanical team, now being addressed through improved collaboration.<br><br>
+
+Upon system activation, limited panning and tilting were observed, swiftly resolved by applying plastic lubricant. To prevent reoccurrence, regular lubrication checks are now part of our maintenance routine.<br><br>
+
+The Raspberry Pi camera placement raised concern, prompting a quick design solution for secure integration with the professional camera.<br><br>
+
+Testing unveiled unexpected instability in the pan-tilt mechanism critical for supporting a professional camera. In response, we modified the component securing tripod legs and battery pack enclosure to enhance stability, ensuring a robust system in our final design iteration.<br><br>
+
+These adjustments showcase our commitment to addressing challenges proactively. Maintaining open communication within the team remains a priority to prevent similar issues, and we look forward to refining our camera system further.
                 </p>
             </div>
         </div>
@@ -102,20 +113,28 @@
       <h3>Software</h3>
       <br>
       <div class="row">
-          <div class="col-3">
-              <img src="assets/elec_sprint_1.jpg" style="height:auto; width:350px;">
-              <figcaption>Electrical connections between the Arduino, Raspberry Pi, Picamera, and Servo</figcaption>
+          <div class="col">
+              <img src="assets/sprint_3_code_structure.PNG" style="height:auto; width:100%;">
+              <figcaption><b>Updated Software Diagram</b></figcaption>
           </div>
-          <div class="col-3">
-            <img src="assets/elec_sprint_1_diagram.JPG" style="height:auto; width:350px;">
-            <figcaption>Block diagram showing wire connections between all electrical components</figcaption>
-          </div>
-          <div class="col-6">
-              <p> improve perfoamnces
-              </p>
+          <div class="col">
+              <img src="assets/sprint_3_detect.gif" style="height:auto; width:100%;">
+              <figcaption><b>New Tracking Algorithm in Action</b></figcaption>
           </div>
       </div>
+      <br>
+      <p style="margin-left: 0px;">
+        For this sprint, the goal was to improve performance, and have the camera system behave more intelligently when it lost 
+        track of its subject. For performance, an improvement in performance could be achieved via integration of a tracking system
+        alongside the existing detection system. Since a tracking algorithm can work with just a provided bounding box and the previous
+        frame, it places less of a computational burden on the Raspberry Pi. With the new system, object detection will be initially used
+        to located the subject, and that bounding box will then be fed to an object tracking using the MOSSE Filter algorithm to track the
+        provided cluster of pixels within the bounding box. By only occasion re-running detection, we gained a huge performance boost,
+        going from only about 5 frames per second to 15.
+      </p>
     </div>
+    <br>
+    <br>
 
     <div class="overview">
       <h3>Electrical</h3>
@@ -123,14 +142,14 @@
       <div class="row">
           <div class="col">
               <img src="assets/sprint_3_elec_diagram.png" style="height:auto; width:100%;">
-              <figcaption>Updated Electrical Diagram</figcaption>
+              <figcaption><b>Updated Electrical Diagram</b></figcaption>
           </div>
           <div class="col">
             <iframe width="100%" height="90%" src="https://www.youtube.com/embed/ZElkx8AtyqQ?si=1YGYm_EMe5jlcqmf" title="YouTube video player"
              frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
              allowfullscreen>
             </iframe>
-            <figcaption>RC Motor Test Video</figcaption>
+            <figcaption><b>RC Motor Test Video</b></figcaption>
           </div>
       </div>
       <br>

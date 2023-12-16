@@ -6,6 +6,24 @@
     <title>cam-track</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="main.css">
+    <style>
+      .custom-welcome-text {
+          font-size: 30px; /* Adjust the size as needed */
+          font-weight: normal; /* To ensure it's not bold */
+          /* Add any other styling as needed */
+      }
+      .dotted-line-container {
+          width: 90%; /* Adjust the width as needed */
+          margin: 0 auto; /* Center the container */
+        }
+      .dotted-line {
+          border: none;
+          border-top: 10px dotted #000; /* You can adjust the color as needed */
+        }
+        .custom-welcome-text {
+          line-height: 1.5; /* Adjust the line height for increased spacing */
+        }
+  </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top" data-bs-theme="dark">
@@ -29,7 +47,7 @@
               </a>
               <ul class="dropdown-menu">
                 <li style="margin-left:0px"><a class="dropdown-item" href="mechanical.html">Mechanical Design</a></li>
-                <li style="margin-left:0px"><a class="dropdown-item" href="electrical.html">Electrical and Firmware Design</a></li>
+                <li style="margin-left:0px"><a class="dropdown-item" href="electrical.html">Electrical & Firmware Design</a></li>
                 <li style="margin-left:0px"><a class="dropdown-item" href="software.html">Software Design</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li style="margin-left:0px"><a class="dropdown-item" href="budget.html">Bill of Materials</a></li>
@@ -46,7 +64,9 @@
                 <li style="margin-left:0px"><a class="dropdown-item" href="sprint_3.html">Sprint 3</a></li>
               </ul>
             </li>
-            
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -55,9 +75,23 @@
     <div class="card mx-auto title-card">
         <div class="card-body">
             <h1 class="card-text">cam-track</h1>
-            <h2 class="card-text">The new automated tripod for your video shots!</h2>
+            <h2 class="card-text">The Automated Tripod for Your Videos</h2>
         </div>
     </div>
+    
+    <div class="introduction">
+      <div class="container mt-5 text-center">
+          <div class="row">
+              <div class="col">
+                  <h3 class="custom-welcome-text">
+                      Discover the future of videography with <b>cam-track</b>. <br>Our 
+                      automated tripod empowers content creators to capture stunning footage 
+                      effortlessly. Elevate your video production experience with our product.
+                  </h3>
+              </div>
+          </div>
+      </div>
+  </div>
     
     <div class="overview" style="text-align: center;">
         <div class="row">
@@ -69,9 +103,48 @@
             </div>
             <div class="col">
               <img src="assets/final_prod_assets/tripod3.jpg" style="width:100%; border: 5px solid black; border-radius: 25px;">
+            </div>       
+        </div>
+    </div>
+
+    <div class="dotted-line-container">
+      <hr class="section-break mt-5">
+    </div>
+
+    <div class="system-diagram">
+      <div class="container mt-5">
+          <div class="row">
+              <div class="col">
+                  <h3 class>
+                    System Diagram
+                  </h3>
+              </div>
+          </div>
+      </div>
+  </div>
+
+    <div class="system-diagrams mt-5" style="text-align: center;">
+      <div class="row">
+          <div class="col">
+              <img src="assets/system diagram.png" style="width:75%; border: 5px solid black; border-radius: 25px;">
+          </div>
+      </div>
+  </div>
+
+  <div class="system explain">
+    <div class="container mt-5 text-center">
+        <div class="row">
+            <div class="col">
+                <h3 class="custom-welcome-text" style="white-space: nowrap;">
+                  <b>cam-track</b> uses a Raspberry Pi 4 and PiCamera to capture and process data to enable body tracking. <br>
+                  The data is sent to an Arduino Uno, which processes the data into instructions for the motors to follow. <br>
+                  The Stepper Motors tilt and pan a DSLR Digital Camera, while the DC Brushless Motor manuevers the tripod. 
+                </h3>
             </div>
         </div>
     </div>
+</div>
+
     <br>
     <br>
     <br>

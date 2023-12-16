@@ -24,12 +24,12 @@
             </li>
             
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Product Details
               </a>
               <ul class="dropdown-menu">
                 <li style="margin-left:0px"><a class="dropdown-item" href="mechanical.html">Mechanical Design</a></li>
-                <li style="margin-left:0px"><a class="dropdown-item" href="electrical.html">Electrical and Firmware Design</a></li>
+                <li style="margin-left:0px"><a class="dropdown-item" href="electrical.html">Electrical & Firmware Design</a></li>
                 <li style="margin-left:0px"><a class="dropdown-item" href="software.html">Software Design</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li style="margin-left:0px"><a class="dropdown-item" href="budget.html">Bill of Materials</a></li>
@@ -46,17 +46,102 @@
                 <li style="margin-left:0px"><a class="dropdown-item" href="sprint_3.html">Sprint 3</a></li>
               </ul>
             </li>
-            
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
     <div class="container sec-title">
-      <div class="card mx-auto img-fluid section-card" style="background-color: white; border-color: black;">
-          <h1 class="card-text" style="color:black; font-size: 50px;">Software Design</h1>
+      <div class="card mx-auto img-fluid section-card" style="background-color: black;">
+          <h1 class="card-text" style="color:white; font-size: 50px;">Software Design</h1>
+      </div>
+  </div>
+
+
+    <div class="overview">
+      <h4>Raspberry Pi</h4>
+      <br>
+      <div class="row">
+        <div class="col">
+          <img src="assets/final_prod_assets/rasp_pi.jpg" style="width: 100%">
+        </div>
+        <div class="col">
+          <img src="assets/final_prod_assets/picamera.jpg" style="width: 100%">
+        </div>
+        <div class="col-5 d-flex align-items-center">
+          <p>
+            We first access the Raspberry Pi's camera through the python picamera2 module. In order to read the camera,
+            we use the module to save the current frame as a NumPy array every timestep. The image's colorspace
+            is then converted from RGB to BGR in order to align with OpenCV standards. OpenCV then reads and visualizes
+            the NumPy array, which allows use to perform object detection and tracking on it.
+          </p> 
+        </div>
       </div>
     </div>
+
+    <div class="overview">
+      <h4>Object Detection</h4>
+      <br>
+      <div class="row">
+        <div class="col">
+          <img src="assets/sprint_2_detect.gif" style="width: 80%">
+        </div>
+        <div class="col-7">
+          <p>The gif to the left represents the person detection step of our software. A Single-Shot Multibox Detection
+            Deep Neural Network detects the person and returns the following:
+          </p>
+          <li>Bounding Box</li>
+          <li>Confidence Value</li>
+          <li>Object ID</li>
+          <p>While this does a great job at detecting the subject, performance is too low for our project's purposes.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="overview">
+      <h4>Object Tracking</h4>
+      <br>
+      <div class="row">
+        <div class="col">
+          <img src="assets/sprint_3_detect.gif" style="width: 100%">
+        </div>
+        <div class="col-6 d-flex align-items-center">
+          <p>To resolve this, we also initiate a tracking step, which takes the detected bounding box as an input. Unlike object detection,
+            object tracking uses the previous frame to estimate the change in pixels over time. This allows it to continue to track a 
+            detected person, without needing to expend the computational energy to re-detect the subject every frame. As a result,
+            performance is greatly increased.
+          </p>
+          <p>
+            As the subject is tracked, the center of the bounding box is saved as a coordinate pair. The coordinates are then normalized
+            so that the center of the screen is (0,0). Once the bounding boxes have been normalized, they are sent over to the Arduino
+            via serial port.
+          </p> 
+        </div>
+      </div>
+    </div>
+
+    <div class="overview">
+      <h4>Stepper Motor Logic</h4>
+      <br>
+      <div style="text-align: center;">
+        <img src="assets/sprint_3_code_structure.PNG" style="width: 30%;">
+      </div>
+      <br>
+      <p>
+        Above is our software loop. By only occasionally re-detecting, we maintain good performance while ensuring that our track doesn't 
+        slip off of our subject.
+      </p>
+      <p>
+        For the full software code, see the object_detection folder in our <a href="https://github.com/redhotchili0909/cam-track">GitHub Repo.</a>
+      </p>
+    </div>
+
+    <br>
+    <br>
+    <br>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
   </body>

@@ -24,12 +24,12 @@
             </li>
             
             <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false" aria-current="page">
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 Product Details
               </a>
               <ul class="dropdown-menu">
                 <li style="margin-left:0px"><a class="dropdown-item" href="mechanical.html">Mechanical Design</a></li>
-                <li style="margin-left:0px"><a class="dropdown-item" href="electrical.html">Electrical and Firmware Design</a></li>
+                <li style="margin-left:0px"><a class="dropdown-item" href="electrical.html">Electrical & Firmware Design</a></li>
                 <li style="margin-left:0px"><a class="dropdown-item" href="software.html">Software Design</a></li>
                 <li><hr class="dropdown-divider"></li>
                 <li style="margin-left:0px"><a class="dropdown-item" href="budget.html">Bill of Materials</a></li>
@@ -46,17 +46,19 @@
                 <li style="margin-left:0px"><a class="dropdown-item" href="sprint_3.html">Sprint 3</a></li>
               </ul>
             </li>
-            
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
           </ul>
         </div>
       </div>
     </nav>
 
     <div class="container sec-title">
-      <div class="card mx-auto img-fluid section-card" style="background-color: gray;">
-          <h1 class="card-text" style="color:white; font-size: 50px;">Electrical Design</h1>
+      <div class="card mx-auto img-fluid section-card" style="background-color: black;">
+          <h1 class="card-text" style="color:white; font-size: 50px;">Electrical & Firmware Design</h1>
       </div>
-    </div>
+  </div>
 
     <div class="overview">
       <h4>Overview</h4>
@@ -94,7 +96,7 @@
         <div class="col">
           <img src="assets/final_prod_assets/elec_wires_power.jpg" style="width: 100%">
         </div>
-        <div class="col-6">
+        <div class="col-6 d-flex align-items-center">
           <p>Because our system contained many moving parts and expensive equipment, we wanted to be able to easily turn all motors on and off
             with one button and run everything risky off of our one 11.1V LiPo battery. The button we used was mounted on the side of the tripod leg 
             for easy access and is pictured to the left. The button acted as a switch between the power line of the battery and the rest of 
@@ -121,7 +123,7 @@
         <div class="col">
           <img src="assets/final_prod_assets/vert_stepper.jpg" style="width: 100%">
         </div>
-        <div class="col-5">
+        <div class="col-5 d-flex align-items-center">
           <p>
             The system used two stepper motors to horizontally pan and vertically tilt the camera towards the detected person. 
             The panning stepper is shown in the leftmost image-- it sits in the box under the tripod head and when the stepper rotates,
@@ -143,7 +145,7 @@
         <div class="col">
           <img src="assets/final_prod_assets/picamera.jpg" style="width: 100%">
         </div>
-        <div class="col-5">
+        <div class="col-5 d-flex align-items-center">
           <p>
             The Raspberry Pi was loaded with a program to track people's bodies and send commands to the Arduino via Serial communication
             through a USB cable. We mounted the Pi to the side of the tripod and 
@@ -160,7 +162,7 @@
         <div class="col">
           <img src="assets/final_prod_assets/esc_rc_motor.jpg" style="width: 100%">
         </div>
-        <div class="col-7">
+        <div class="col-7 d-flex align-items-center">
           <p>
             One of our stretch goals was to have the tripod drive on its own to physically follow a person as well. We used an RC Motor 
             and a corresponding Electronic Stability Controller (ESC), using a separate Arduino to send motor commands to it. However,
@@ -168,12 +170,6 @@
             about electrical progress with the RC Motor, look into the Sprint 3 page.
           </p> 
         </div>
-      </div>
-    </div>
-  
-    <div class="container sec-title">
-      <div class="card mx-auto img-fluid section-card" style="background-color: gray;">
-          <h1 class="card-text" style="color:white; font-size: 50px;">Firmware Design</h1>
       </div>
     </div>
 
@@ -185,7 +181,7 @@
       </div>
       <br>
       <p>
-        For the full firmware code, see the stepper_pan_tilt folder in our <a href="https://github.com/redhotchili0909/cam-track">GitHub Repo.</a>
+        For the full firmware code, see the <i>stepper_pan_tilt</i> folder in our <a href="https://github.com/redhotchili0909/cam-track">GitHub Repo.</a>
       </p>
       <p>
         Using our Arduino UNO R3, we sent commands to the x and y stepper motors to move the camera according to commands from the Raspberry
