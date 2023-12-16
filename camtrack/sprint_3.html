@@ -102,20 +102,28 @@
       <h3>Software</h3>
       <br>
       <div class="row">
-          <div class="col-3">
-              <img src="assets/elec_sprint_1.jpg" style="height:auto; width:350px;">
-              <figcaption>Electrical connections between the Arduino, Raspberry Pi, Picamera, and Servo</figcaption>
+          <div class="col">
+              <img src="assets/sprint_3_code_structure.PNG" style="height:auto; width:100%;">
+              <figcaption>Updated Software Diagram</figcaption>
           </div>
-          <div class="col-3">
-            <img src="assets/elec_sprint_1_diagram.JPG" style="height:auto; width:350px;">
-            <figcaption>Block diagram showing wire connections between all electrical components</figcaption>
-          </div>
-          <div class="col-6">
-              <p> improve perfoamnces
-              </p>
+          <div class="col">
+              <img src="assets/sprint_3_detect.gif" style="height:auto; width:100%;">
+              <figcaption>New Tracking Algorithm in Action</figcaption>
           </div>
       </div>
+      <br>
+      <p style="margin-left: 0px;">
+        For this sprint, the goal was to improve performance, and have the camera system behave more intelligently when it lost 
+        track of its subject. For performance, an improvement in performance could be achieved via integration of a tracking system
+        alongside the existing detection system. Since a tracking algorithm can work with just a provided bounding box and the previous
+        frame, it places less of a computational burden on the Raspberry Pi. With the new system, object detection will be initially used
+        to located the subject, and that bounding box will then be fed to an object tracking using the MOSSE Filter algorithm to track the
+        provided cluster of pixels within the bounding box. By only occasion re-running detection, we gained a huge performance boost,
+        going from only about 5 frames per second to 15.
+      </p>
     </div>
+    <br>
+    <br>
 
     <div class="overview">
       <h3>Electrical</h3>
