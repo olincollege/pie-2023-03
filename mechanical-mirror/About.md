@@ -1,4 +1,7 @@
 # About the team:
+
+![The team without Ale](https://raw.githubusercontent.com/mcuevas-olin/pie-2023-03/gh-pages/mechanical-mirror/Images/IMG_3761.JPG "The team (minus Ale)")
+
 ## Pauline 
 ### (she/her)
 Designed and wired the electrical system, managed the team budget, and team check-ins as Project Manager.
@@ -11,7 +14,7 @@ Designed and built the pixels and the grid that contains them, assisted with the
 ### (she/they)
 Worked on design of linear actuator for gantry system containing servos for moving pixels, helped make design for structural frame, and worked on fabrication and integration of mechanical components.
 
-# Ale 
+## Ale 
 ### (they/them): 
 Worked on the image processing software, pixel integration, raspberry pi camera stand, and creating the website.
 
