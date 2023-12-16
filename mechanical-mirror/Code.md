@@ -1,5 +1,7 @@
 # Code
 
+All code for the mechanical mirror can be found in [this GitHub repository](https://github.com/joloujo/mechanical-mirror)
+
 ## Sprint 1:
 In sprint one, there were two systems that we needed to code. This first was image processing, which would take an image of the background and an image of the subject and turn it into data we could display.
 
@@ -39,7 +41,10 @@ The last thing we did in sprint two was test the PiCam. We wrote a small test sc
 For sprint three, we started by reorganizing the code into modules. Going into this sprint, the code was mostly in a single file. We decided to break it up into several modules to keep our code more organized.
 
 Breaking our code into modules also allowed us to more easily implement multi-platform code. When integrating our code with the Raspberry Pi, it quickly became clear that we needed to execute different code when testing with a laptop or using the Raspberry Pi, especially when getting images from the camera. To solve this issue, we wrote code that would determine the platform that the code was running on and import different libraries based on the operating system. Certain functions would also run different code based on the operating system. For example, the mechanical mirror code would use ‘COM4’ for the serial port on Windows and ‘/dev/ttyACM0’ on Linux. Part of this multiplatform implementation included simulating the Arduino so the code could be tested quickly and easily without connecting the physical mirror. The functions in the arduino interface code print the output if the arduino is simulated instead of sending commands via the serial connection.
+
 Another thing we did during sprint three was modify the auto-run code on the Raspberry Pi. While it is convenient, pulling code from the internet and automatically running it is a massive security risk, especially with a device that can connect to the Olin wireless networks. Because of this, we turned off the auto-pull portion of the code. We also added a shutdown feature, which is a button connected to the Raspberry Pi GPIO pins that automatically shuts the Pi off when it is pushed. This means that all processes end cleanly and we don’t have to worry about corrupting the SD card. This allows us to fully turn on, run code on, and shut down the Pi safely without using a monitor, keyboard, or mouse.
+
 Finally, we of course had to integrate everything. First, we modified the servo code to use the PCA9685 I2C servo driver board instead of individual servos. We then calibrated the code to work with the new screen size and pixel spacing. The biggest change is that we created a user interaction loop so that photos could be taken and displayed multiple times without having to rerun the code and therefore restart the Raspberry Pi. To allow the user to interact with this loop, we implemented a shutter button. When the command is sent to the microcontroller to wait for the shutter, it waits until the button has been pressed and released to respond with a successful message. To prevent the serial read call in the software from timing out, the microcontroller sends a “ping” message every second to inform the software that it is still waiting for the shutter to be pressed. Once this run loop was complete and tested using a laptop, the code was transferred to the Raspberry Pi and everything was complete.
 
+## Code structure diagram
 ![diagram of showing the flow of code](https://raw.githubusercontent.com/mcuevas-olin/pie-2023-03/gh-pages/mechanical-mirror/Images/CodeDiagram.png "Code Diagram")
