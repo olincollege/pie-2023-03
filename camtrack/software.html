@@ -56,59 +56,42 @@
 
     <div class="container sec-title">
       <div class="card mx-auto img-fluid section-card" style="background-color: gray;">
-          <h1 class="card-text" style="color:white; font-size: 50px;">Electrical Design</h1>
+          <h1 class="card-text" style="color:white; font-size: 50px;">Software Design</h1>
       </div>
     </div>
 
     <div class="overview">
-      <h4>Overview</h4>
+      <h4>Object Detection</h4>
       <br>
       <div class="row">
         <div class="col">
-          <img src="assets/final_prod_assets/elec_diagram.jpg" style="width: 100%">
+          <img src="assets/sprint_2_detect.gif" style="width: 80%">
         </div>
-        <div class="col">
-          <img src="assets/final_prod_assets/electrical_enclosure.jpg" style="width: 100%">
-        </div>
-        <div class="col-5">
-          <p>The diagram to the left represents an overview of all the electrical components and how they are connected. The electrical 
-            enclosure at the base of the tripod is shown as well, housing most of the electronics in this system. The main 
-            sections include:
+        <div class="col-7">
+          <p>The gif to the left represents the person detection step of our software. A Single-Shot Multibox Detection
+            Deep Neural Network detects the person and returns the following:
           </p>
-          <li>Power Management</li>
-          <li>Stepper Motors for Pan-Tilt Mechanism</li>
-          <li>Raspberry Pi for Tracking and Vision</li>
-          <li style="margin-bottom: 20px;">RC Motor and ESC for Tripod Driving</li>
-          <p>Though all the connections shown were physically wired up, mechanical difficulties and time limitations 
-            ended up having us not use the RC Motor or the ESC in the final product. These components are also are grayed out
-            with dotted lines in the diagram for clarity.</p>
+          <li>Bounding Box</li>
+          <li>Confidence Value</li>
+          <li>Object ID</li>
+          <p>While this does a great job at detecting the subject, performance is too low for our project's purposes.</p>
         </div>
       </div>
     </div>
 
     <div class="overview">
-      <h4>Power Management</h4>
+      <h4>Object Tracking</h4>
       <br>
       <div class="row">
         <div class="col">
-          <img src="assets/final_prod_assets/button.jpg" style="width: 100%">
-        </div>
-        <div class="col">
-          <img src="assets/final_prod_assets/elec_wires_power.jpg" style="width: 100%">
+          <img src="assets/sprint_3_detect.gif" style="width: 100%">
         </div>
         <div class="col-6">
-          <p>Because our system contained many moving parts and expensive equipment, we wanted to be able to easily turn all motors on and off
-            with one button and run everything risky off of our one 11.1V LiPo battery. The button we used was mounted on the side of the tripod leg 
-            for easy access and is pictured to the left. The button acted as a switch between the power line of the battery and the rest of 
-            the components being powered, so that when the button was turned off, the components would not be able to draw any power from the 
-            battery.
+          <p>To resolve this, we also initiate a tracking step, which takes the detected bounding box as an input. Unlike object detection,
+            object tracking uses the previous frame to estimate the change in pixels over time. This allows it to continue to track a 
+            detected person, without needing to expend the computational energy to re-detect the subject every frame. As a result,
+            performance is greatly increased.
           </p> 
-          <p>
-            In order to connect multiple wires to the LiPo battery, we had to solder two wires to a singular one coming from the positive and 
-            negative terminals of the battery. Each wire splitting off from each terminal would go to the corresponding positive/negative end
-            in either our CNC Motorshield (and power the stepper motors) or our RC Motor ESC. A picture of the connections before we harnessed
-            the wires to the tripod is shown to the left as well, with an arrow pointing to an example of such a split.
-          </p>
         </div>
       </div>
     </div>
