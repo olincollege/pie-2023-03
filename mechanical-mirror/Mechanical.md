@@ -4,12 +4,8 @@ Walk through the Sprints and explain the ideation process and build methods, wha
 
 
 # Basic Design used for all sprints.
-<div style="text-align: center;">
-  
-![A simple diagram demonstrating the basic design working principles](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/MMMechanismPrinciples.png "Mechanism Principles Diagram")
 
-</div>
-
+![A simple diagram demonstrating the basic design working principles](https://raw.githubusercontent.com/mcuevas-olin/pie-2023-03/gh-pages/mechanical-mirror/Images/MMMechanismPrinciples.png "Mechanism Principles Diagram")
 
 Our basic design consists of a grid of drum-shaped pixels with integrated gears that rotate to change what color is currently exposed to a viewer. The axis of rotation is parallel to the X axis (if X is left-right, Y is up down and Z is pointing out of the plane of the mirror). On the back of the mirror, a gantry mechanism flips pixels column by column to display an image, by rotating each to display a desired state.
 
@@ -20,17 +16,17 @@ Each servo has a gear on it. As the VSA moves across the mirror, the gear aligns
 We used this design to prevent the need for a servo for every single pixel, as that would not be scalable in terms of overall cost.
 
 
-![A rendering of the pixel design used for sprint 1 and 2](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/PixelSp12.png "Sprint 1 and 2 pixel")
-![A rendering of the pixel design used for sprint 3](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/PixelSp3.png "Sprint 3 pixel")
+![A rendering of the pixel design used for sprint 1 and 2](https://raw.githubusercontent.com/mcuevas-olin/pie-2023-03/gh-pages/mechanical-mirror/Images/PixelSp12.png "Sprint 1 and 2 pixel")
+![A rendering of the pixel design used for sprint 3](https://raw.githubusercontent.com/mcuevas-olin/pie-2023-03/gh-pages/mechanical-mirror/Images/PixelSp3.png "Sprint 3 pixel")
 
 The pixel design for sprint 1 sprint 2 (left), and sprint 3 (right) this pixel design worked well and was actuated by a similarly sized gear connected to the VSA. For sprints 1 and 2 each pixel had its mounting frame that it would spin freely inside of while in sprint 3 the pixel was directly mounted (while still able to free spin) to the mirror. Colored black and white these will form the image drawn upon the mirror.
 
 
 
 
-![A rendering of the Vertical Servo Arm design used for sprint 1](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/VSASp1.png "Sprint 1 Vertical Servo Arm")
-![A rendering of the Vertical Servo Arm design used for sprint 2](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/VSASp2.png "Sprint 2 Vertical Servo Arm")
-![A rendering of the Vertical Servo Arm design used for sprint 3](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/VSASp3.png "Sprint 3 Vertical Servo Arm")
+![A rendering of the Vertical Servo Arm design used for sprint 1](https://raw.githubusercontent.com/mcuevas-olin/pie-2023-03/gh-pages/mechanical-mirror/Images/VSASp1.png "Sprint 1 Vertical Servo Arm")
+![A rendering of the Vertical Servo Arm design used for sprint 2](https://raw.githubusercontent.com/mcuevas-olin/pie-2023-03/gh-pages/mechanical-mirror/Images/VSASp2.png "Sprint 2 Vertical Servo Arm")
+![A rendering of the Vertical Servo Arm design used for sprint 3](https://raw.githubusercontent.com/mcuevas-olin/pie-2023-03/gh-pages/mechanical-mirror/Images/VSASp3.png "Sprint 3 Vertical Servo Arm")
 
 The Vertical Servo Arm (VSA) design for sprint 1 (left), sprint 2 (center), and sprint 3 (right). Each consists of a large arm moved by the linear screw actuators back and forth containing servos with the gears to mesh with each pixel. This is what moves collum by collum meshing with and then rotating pixels to change what color they display thus drawing an image on the mirror.
 
@@ -47,9 +43,9 @@ The pixel structure was then glued to the square structure with the stepper-moto
 We used a scrap threaded rod as a lead screw, instead of a proper lead screw with a larger pitch. Due to our unfamiliarity with lead screws, we wanted to test whether the idea would work before ordering one. The threaded rod we used has a much lower pitch than the lead screws used in Sprints 2 and 3, so traversal along it was very slow. However, it provided proof of concept that the design would work.
 
 
-![A view of our sprint 1 design as it was in the CAD](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/SP1CADrender.png "Sprint 1 CAD Render")
+![A view of our sprint 1 design as it was in the CAD](https://raw.githubusercontent.com/mcuevas-olin/pie-2023-03/gh-pages/mechanical-mirror/Images/SP1CADrender.png "Sprint 1 CAD Render")
 
-![A view of our completed sprint 1 design of the front mechanisms not in view](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/SP1RealPic.jpg "Sprint 1 Output")
+![A view of our completed sprint 1 design of the front mechanisms not in view](https://raw.githubusercontent.com/mcuevas-olin/pie-2023-03/gh-pages/mechanical-mirror/Images/SP1RealPic.jpg "Sprint 1 Output")
 
 
 ## Sprint 2: 
@@ -63,9 +59,9 @@ Our Sprint 2 VSA was a flat plate of laser-cut MDF with holes in it for mounting
 
 Cad screenshot placeholder
 
-![A view of our sprint 2 design as it was in the CAD](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/SP2CADrender.png "Sprint 2 CAD Render")
+![A view of our sprint 2 design as it was in the CAD](https://raw.githubusercontent.com/mcuevas-olin/pie-2023-03/gh-pages/mechanical-mirror/Images/SP2CADrender.png "Sprint 2 CAD Render")
 
-![A view of our completed sprint 2 design of the front mechanisms not in view](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/SP2RealPic.jpg "Sprint 2 Output")
+![A view of our completed sprint 2 design of the front mechanisms not in view](https://raw.githubusercontent.com/mcuevas-olin/pie-2023-03/gh-pages/mechanical-mirror/Images/SP2RealPic.jpg "Sprint 2 Output")
 
 
 ## Sprint 3:
@@ -79,6 +75,6 @@ To improve the overall speed of the mirror, we decided to test a more complicate
 
 As a fallback plan for if we ran out of time, we made it possible for the design to be scaled back to the original VSA design we used in sprint 2, where each servo has only one gear attached to it. After some initial testing of the more ambitious VSA design, we had to scale back down to the original design. Because of impending deadlines, the fabrication was done quickly and haphazardly, and as a result, the product wasn’t precise enough and the fallback plan was successfully implemented resulting in our sprint 3 design. 
 
-![A view of our sprint 3 design as it was in the CAD](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/SP1CADrender.png "Sprint 3 CAD Render")
+![A view of our sprint 3 design as it was in the CAD](https://raw.githubusercontent.com/mcuevas-olin/pie-2023-03/gh-pages/mechanical-mirror/Images/SP1CADrender.png "Sprint 3 CAD Render")
 
-![A view of our completed sprint 3 design of the front mechanisms not in view](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/SP3RealPic.jpg "Sprint 3 Output")
+![A view of our completed sprint 3 design of the front mechanisms not in view](https://raw.githubusercontent.com/mcuevas-olin/pie-2023-03/gh-pages/mechanical-mirror/Images/SP3RealPic.jpg "Sprint 3 Output")

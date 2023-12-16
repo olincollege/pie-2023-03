@@ -19,6 +19,7 @@
 | **Budget**                | **$250**    |
 
 ## Obtained for Free:
+
 | Item                      | Value |
 |---------------------------|-------|
 | Screws                    | $5    |
