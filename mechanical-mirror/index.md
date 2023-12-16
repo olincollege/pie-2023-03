@@ -23,6 +23,10 @@ We made a mechanical mirror, which is a mechanical display that displays anyone 
 # Examples
 ## Example before and after photos:
 
+![An example image of someone displayed on the mechanical mirror](https://raw.githubusercontent.com/mcuevas-olin/pie-2023-03/gh-pages/mechanical-mirror/Images/example1.png "Example 1"){: width="0.3vw" }
+![An example image of someone displayed on the mechanical mirror](https://raw.githubusercontent.com/mcuevas-olin/pie-2023-03/gh-pages/mechanical-mirror/Images/example2.png "Example 2"){: width="0.3vw" }
+![An example image of someone displayed on the mechanical mirror](https://raw.githubusercontent.com/mcuevas-olin/pie-2023-03/gh-pages/mechanical-mirror/Images/example3.png "Example 3"){: width="0.3vw" }
+
 ## Example Video:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/98xqTyCnihM?si=X8l4SJlZaNW46-1X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
@@ -55,6 +59,3 @@ During each sprint, all the subteams met to decide what route to take based on t
 
 > Sticking to a timeline
   >  - Team check-ins were a priority to stay on top of deadlines. The team practiced the scrum management style by working through three sprints and logging tasks. 
-
-
-# Link to Github
