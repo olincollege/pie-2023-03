@@ -1,5 +1,5 @@
 # Mechanical Mirror
-You are the art
+*You are the art*
 # Table of Contents
 
 > We have consolidated our other pages here for ease of access.
