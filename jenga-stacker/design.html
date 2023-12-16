@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>Generic - Editorial by HTML5 UP</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<div id="main">
+			<div class="inner">
+
+				<!-- Header -->
+				<header id="header">
+					<a href="index.html" class="logo"><strong>Jenga Stacker</strong></a>
+					<ul class="icons">
+						<li><a href="https://github.com/akshat-creator/JengaStacker" class="icon brands fa-github"><span
+									class="label">Github</span></a></li>
+					</ul>
+				</header>
+
+				<!-- Content -->
+				<section>
+					<header class="main">
+						<h1>Design</h1>
+					</header>
+
+					<span class="image main" style="display: block; margin: 0 auto;"><img
+							src="images/flowchart.jpeg" alt="" /></span></br>
+
+					<p> Our project is all about building a Jenga stacker that can do three key things: 1) position
+						Jenga
+						pieces individually, 2) organize them into groups of three, and 3) stack these groups into a
+						tower. There are four defined quadrants in this design. All the mechanisms are entirely mirrored
+						along
+						the diagonal as the orientation of the jenga layers switches each time. To begin, the jenga
+						pieces are placed in the Placement Quadrant and the Straight Pushers will either push the piece
+						into the Horizontal or Vertical Layer Quadrants. Once three jenga pieces are stored in either
+						the Layer Quadrants, the finished layer is pushed into the Elevator Cavity by the L-shaped
+						Pushers. The L-shaped Pushers will make a second pass to ensure proper alignment of pieces in
+						the Elevator Cavity. The elevator lowers to allow the next layer to be added. In this way a full
+						jenga stack is built from the top layer every time in simple repeatable actions.
+					</p>
+					<div class="image main" style="display: block; margin: 0 auto;"><img src="images/TopDiagram.png"
+							alt="" /></div>
+
+
+					<hr class="major" />
+
+					<h2 id="s1">Mechanical</h2>
+
+					<div class="image main" style="display: block; margin: 0 auto;"><img src="images/FullDiagram.png"
+							alt="" /></div>
+					<h3 id="s1">Stacker</h3>
+
+					<p>
+						There are four belt-pulley systems that translate stepper motor rotational motion into linear
+						motion. These belts control the movement of the pushers.
+					</p>
+					<p>
+						Major design decisions were dictated by the following metrics:
+						<br>Controlled precision
+						<br>Low tolerances
+						<br>Robust design
+					</p>
+					<p>
+						The positioning and tolerance is highly precise. Additionally for the priority of precision we
+						opted
+						to take our measurements in metric units. The first critical design constraints were the jenga
+						pieces themselves. A one by three layer was measured to be 7.5cm by 7.5cm. A major design
+						decision
+						early on was that the elevator cavity had to retain the jenga stack while minimizing
+						inconsistencies
+						and movement. The length of the belt assembly determined the travel distance of the pusher. One
+						big
+						challenge was to create enough travel distance while still maintaining tight tolerances. Much of
+						this was accomplished by constant reiteration of various parts to better optimize the given
+						space.
+					</p>
+
+					<div class="image main" style="display: block; margin: 0 auto;"><img
+							src="images/beltpulleysystem.JPG" alt="" /></div>
+					<p>Another challenge we discovered early on was that while belts and pulleys could be precise in
+						their controlled movement, they were unable to withstand the weight and torque necessary to
+						fulfill the needs of the attached pusher. Taking inspiration from 3D printers, we discovered
+						that belts were bolstered with supports going along the belt length. Simple wooden dowels were
+						used for this additional support. 3D printed dowel holders keep the pusher from wobbling.The
+						final dowel holders went through a few iterations. Not only did the position of the dowels shift
+						to being next to each other for better lateral support, we added limit switches to detect when a
+						pusher has reached a specific end of its travel.
+					</p>
+
+					<div class="image main" style="display: block; margin: 0 auto;"><img src="images/dowelholder.jpg"
+							alt="" /></div>
+
+					<p>
+						To prevent the elevator lead screws from wobbling at the top we created a plate to hold the top
+						of the screw. This plate also had a custom made bushing to allow free rotation of the screw.
+					</p>
+
+
+					<h3 id="s1">Pushers</h3>
+					<p>
+						There are two types of pushers. A straight pusher and an L-shaped pusher. The straight pusher is
+						responsible for pushing the individual jenga peices into the Layer Quadrants. The L-Shaped
+						pushers are responsible for pushing the jenga layer into the elevator and aligning the layer
+						properly.
+						<br>These 3D printed parts are split into two parts. The top 'pushing' part and the bottom belt
+						attachment.
+						These are attached with a simple screw and popsicle sticks to bolster the rigidity of the
+						pushers. Additional popsicle sticks were added to aid with better contact of the jenga pieces.
+					</p>
+
+					<div class="image main" style="display: block; margin: 0 auto;"><img src="images/pusher.jpeg"
+							alt="" /></div>
+
+					<h3 id="s1">Structure</h3>
+					<div class="image main" style="display: block; margin: 0 auto;"><img src="images/structurecad.png"
+							alt="" /></div>
+					<p>Major design decisions were dictated by the following metrics:
+						<br> clearance
+						<br>Ease of assembly
+						<br>Stable support
+					</p>
+					<p>
+
+						Supporting the top layer is the main body of the structure, which consists of four outer walls
+						and several inner walls for support. The outer walls are made out of laser cut 0.25” hardwood
+						and connected via teeth on the outer edges. The inner walls were connected using a slot joint,
+						and a few minor walls for support were also added around the elevator with teeth. The floor and
+						roof platforms have the same dimensions and same outer holes for the teeth to fit into to secure
+						the entire structure.
+
+
+					</p>
+					<h3 id="s1">Elevator</h3>
+					<div class="image main" style="display: block; margin: 0 auto;"><img src="images/elevator.JPG"
+							alt="" /></div>
+					<p>
+						The entire elevator system fits into the quadrant of the structure opposite of where the Jenga
+						blocks are initially placed. The system uses two stepper motors with lead screws attached to
+						them, and a wooden platform that travels up and down the lead screws which also carries the
+						Jenga blocks down with it. This platform can be pulled out of and put back into the elevator so
+						that the Jenga game can be played by the user(s).
+					</p>
+
+					<hr class="major" />
+
+					<h2 id="s2">Electrical</h2>
+					<p>We are using 6 stepper motors to control the Jenga stacker.
+						For the pushers on the top, we are using 4 Nema17 12V stepper motors as they are advantageous
+						for speed control, positioning precision, movement repeatability, and reliability. They are
+						being run by the CNC shield that has A4988 drivers connected to it. Limit switches on each side
+						of the pusher path that help the motors to know when to stop.
+						In the elevator, we are using 2 Lead screw Nema17 12V stepper motors as they have high torque
+						and can handle the full weight of the Jenga tower. They are being run by a stepper driver which
+						has A4988 drivers connected to it.
+						We are using a 12V 5A Power Supply to run the motors and the Arduino.
+
+					</p>
+					<span class="image main"><img src="images/FinalCircuit.png" alt="" /></span>
+
+					<hr class="major" />
+
+					<h2 id="s3">Firmware and Software</h2>
+					<p>We initially started by using an Arduino Uno and an Adafruit Motor Shield V2 to run the stepper
+						motor,
+						due to the limitation of the shield and board we shifted to a CNC shield using an Arduino Mega.
+						The mega allowed us to connect the limit switches and 2 additional stepper motors for the
+						elevator.
+						The limit switches are being used to track the path of the pushers, it helps to tell the pushers
+						when to stop.
+						Three pushbuttons are being used, we are using the ezButton library which helps to reduce the
+						debouncing of the buttons.
+					</p>
+					<p>Our code has a separate function to run each motor, the system keeps track of the number of
+						blocks being
+						pushed using the limit switch and push buttons. Once there are three blocks the mechanism to
+						stack a layer is initiated,
+						and the pushers stack 3 jenga pieces onto the elevator which moves the Jenga Tower 1 layer down,
+						and the process is repeated.
+						</br></br><span class="image main"><img src="images/mega.jpg" alt="" /></span>
+
+					</p>
+
+				</section>
+
+			</div>
+		</div>
+
+		<!-- Sidebar -->
+		<div id="sidebar">
+			<div class="inner">
+
+
+
+				<!-- Menu -->
+				<nav id="menu">
+					<header class="major">
+						<h2>Menu</h2>
+					</header>
+					<ul>
+						<li><a href="index.html">Homepage</a></li>
+
+
+						<li>
+							<span class="opener">Design</span>
+							<ul>
+								<li><a href="design.html#s1">Mechanical</a></li>
+								<li><a href="design.html#s3">Software/Firmware</a></li>
+								<li><a href="design.html#s2">Electrical</a></li>
+							</ul>
+						</li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li>
+							<span class="opener">Our Process</span>
+							<ul>
+							<li><a href="process.html#s1">Sprint 1</a></li>
+							<li><a href="process.html#s2">Sprint 2</a></li>
+							<li><a href="process.html#s3">Sprint 3</a></li>
+							<li><a href="process.html#s35">Sprint 3.5</a></li>
+							</ul>
+						</li>
+							<li><a href="budget.html">Budget Breakdown</a></li>
+					</ul>
+				</nav>
+
+
+
+				<!-- Section -->
+				<section>
+					<header class="major">
+						<h2><a href="https://github.com/akshat-creator/JengaStacker">Github</a></h2>
+					</header> 
+					<p>Thanks for visiting our page! We hope you enjoyed viewing our project.</p>
+
+					</ul>
+				</section>
+
+				<!-- Footer -->
+				<footer id="footer">
+					<p class="copyright"> <a href="https://github.com/akshat-creator/JengaStacker">Team Jenga Stacker,
+							Olin College Principles of Integrated Engineering 2023</a>. Website Design: <a
+							href="https://	html5up.net">HTML5
+							UP</a>.</p>
+				</footer>
+
+			</div>
+		</div>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
