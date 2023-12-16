@@ -1,6 +1,7 @@
 # About the team:
 
 ![The team without Ale](https://raw.githubusercontent.com/mcuevas-olin/pie-2023-03/gh-pages/mechanical-mirror/Images/IMG_3761.JPG "The team (minus Ale)")
+![The team without Ale](https://raw.githubusercontent.com/mcuevas-olin/pie-2023-03/gh-pages/mechanical-mirror/Images/IMG_3718.JPG "The team (minus Ale)")
 
 ## Pauline 
 *(she/her)*
