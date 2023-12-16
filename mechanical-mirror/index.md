@@ -23,9 +23,9 @@ We made a mechanical mirror, which is a mechanical display that displays anyone 
 # Examples
 ## Example before and after photos:
 
-![An example image of someone displayed on the mechanical mirror](https://raw.githubusercontent.com/mcuevas-olin/pie-2023-03/gh-pages/mechanical-mirror/Images/example1.png "Example 1"){: width="0.3vw" }
-![An example image of someone displayed on the mechanical mirror](https://raw.githubusercontent.com/mcuevas-olin/pie-2023-03/gh-pages/mechanical-mirror/Images/example2.png "Example 2"){: width="0.3vw" }
-![An example image of someone displayed on the mechanical mirror](https://raw.githubusercontent.com/mcuevas-olin/pie-2023-03/gh-pages/mechanical-mirror/Images/example3.png "Example 3"){: width="0.3vw" }
+![An example image of someone displayed on the mechanical mirror](https://raw.githubusercontent.com/mcuevas-olin/pie-2023-03/gh-pages/mechanical-mirror/Images/example1.png "Example 1"){:width="33%"}
+![An example image of someone displayed on the mechanical mirror](https://raw.githubusercontent.com/mcuevas-olin/pie-2023-03/gh-pages/mechanical-mirror/Images/example2.png "Example 2"){:width="33%"}
+![An example image of someone displayed on the mechanical mirror](https://raw.githubusercontent.com/mcuevas-olin/pie-2023-03/gh-pages/mechanical-mirror/Images/example3.png "Example 3"){:width="33%"}
 
 ## Example Video:
 
