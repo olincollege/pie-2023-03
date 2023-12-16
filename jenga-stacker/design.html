@@ -30,48 +30,66 @@
 				<!-- Content -->
 				<section>
 					<header class="main">
-						<h1>Systems</h1>
+						<h1>Design</h1>
 					</header>
 
-					<span class="image main"><img src="images/pic10.jpg" alt="" /></span>
+					<span class="image main"><img src="images/fullcad.png" alt="" /></span>
 
-					<p>The diagram above shows the major components and connections of our system, and is broken into different subsystems.</p>
-					<p>
+					<p>Donec eget ex magna. Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque
+						venenatis dolor imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim
+						auctor sit amet. Pellentesque leo mauris, consectetur id ipsum sit amet, fergiat. Pellentesque
+						in mi eu massa lacinia malesuada et a elit. Donec urna ex, lacinia in purus ac, pretium pulvinar
+						mauris. Curabitur sapien risus, commodo eget turpis at, elementum convallis elit. Pellentesque
+						enim turpis, hendrerit.</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus rutrum facilisis. Class
+						aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Etiam
+						tristique libero eu nibh porttitor fermentum. Nullam venenatis erat id vehicula viverra. Nunc
+						ultrices eros ut ultricies condimentum. Mauris risus lacus, blandit sit amet venenatis non,
+						bibendum vitae dolor. Nunc lorem mauris, fringilla in aliquam at, euismod in lectus.
+						Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. In
+						non lorem sit amet elit placerat maximus. Pellentesque aliquam maximus risus, vel sed vehicula.
 					</p>
-					<p>XXXXXXXX</p>
+					<p>Interdum et malesuada fames ac ante ipsum primis in faucibus. Pellentesque venenatis dolor
+						imperdiet dolor mattis sagittis. Praesent rutrum sem diam, vitae egestas enim auctor sit amet.
+						Pellentesque leo mauris, consectetur id ipsum sit amet, fersapien risus, commodo eget turpis at,
+						elementum convallis elit. Pellentesque enim turpis, hendrerit tristique lorem ipsum dolor.</p>
 
 					<hr class="major" />
 
 					<h2 id="s1">Mechanical</h2>
-					<p>XXXXXXXXXX</p>
-					<p>
+					<p>Our project is all about building a Jenga stacker that can do three key things: 1) position Jenga pieces individually, 2) organize them into groups of three, and 3) stack these groups into a tower. For this Sprint, we are focusing on arranging the pieces into groups of three, because this step is extremely mechanical and a crucial step for the project .</p>
+					<p>On the mechanical side, we made progress by constructing a one-dimensional gantry, which will be the foundation to the design of the pusher. On the electrical front, stepper motors were successfully mounted and connected, and our team is currently in the process of running six stepper motors from an Arduino uno. For software progress, efforts were made to drive the stepper motors using an Arduino microcontroller, marking a significant step forward in the project's development.
 					</p>
-					<span class="image main"><img src="images/pic05.jpg alt="" /></span>
+					<span class="image main"><img src="images/Sprint1.png" alt="" /></span>
 
 
 					<hr class="major" />
 
 					<h2 id="s2">Electrical</h2>
-					<p>XXXXXXX
-					</p>
-					<span class="image main"><img src="images/pic06.jpg" alt="" /></span>
-
-					<hr class="major" />
-
-					<h2 id="s3">Software</h2>
-					<p>XXXXXX
-						<span class="image main"><img src="images/pic07.jpg" alt="" /></span>
-
-					</p>
-
-					<hr class="major" />
-
-					<h2 id="s35"></h2>
-					<p></p>
-					<p>
+					<p>We are using 6 stepper motors to control the Jenga stacker.
+						For the pushers on the top, we are using 4 Nema17 12V stepper motors as they are advantageous for speed control, positioning precision, movement repeatability, and reliability. They are being run by the CNC shield that has A4988 drivers connected to it. Limit switches on each side of the pusher path that help the motors to know when to stop. 
+						In the elevator, we are using 2 Lead screw Nema17 12V stepper motors as they have high torque and can handle the full weight of the Jenga tower. They are being run by a stepper driver which has A4988 drivers connected to it.
+						We are using a 12V 5A Power Supply to run the motors and the Arduino. 
 						
+					</p>
+					<span class="image main"><img src="images/sprint2.jpg" alt="" /></span>
+
+					<hr class="major" />
+
+					<h2 id="s3">Firmware and Software</h2>
+					<p>We initially started by using an Arduino Uno and an Adafruit Motor Shield V2 to run the stepper motor,
+						due to the limitation of the shield and board we shifted to a CNC shield using an Arduino Mega. 
+						The mega allowed us to connect the limit switches and 2 additional stepper motors for the elevator. 
+						The limit switches are being used to track the path of the pushers, it helps to tell the pushers when to stop. 
+						Three pushbuttons are being used, we are using the ezButton library which helps to reduce the debouncing of the buttons.
+						</p>
+					<p>Our code has a separate function to run each motor, the system keeps track of the number of blocks being 
+						pushed using the limit switch and push buttons. Once there are three blocks the mechanism to stack a layer is initiated, 
+						and the pushers stack 3 jenga pieces onto the elevator which moves the Jenga Tower 1 layer down, and the process is repeated.  
+					</br></br><span class="image main"><img src="images/sprint3.jpg" alt="" /></span>
 
 					</p>
+
 				</section>
 
 			</div>
@@ -102,9 +120,9 @@
 						<li>
 							<span class="opener">Design</span>
 							<ul>
-								<li><a href="design.html">Mechanical</a></li>
-								<li><a href="design.html">Software/Firmware</a></li>
-								<li><a href="design.html">Electrical</a></li>
+								<li><a href="#">Mechanical</a></li>
+								<li><a href="#">Software/Firmware</a></li>
+								<li><a href="#">Electrical</a></li>
 							</ul>
 						</li>
 						<li><a href="gallery.html">Gallery</a></li>
@@ -118,10 +136,15 @@
 				<section>
 					<header class="major">
 						<h2>Get in touch</h2>
-					</header> 
-					<p>Thanks for visiting our page! We hope you enjoyed viewing our project.</p>
-					<li class="icon solid fa-home">Olin College of Engineering<br />
-							</li>
+					</header>
+					<p>Sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem
+						ullamcorper dolore. Proin sed aliquam facilisis ante interdum. Sed nulla amet lorem feugiat
+						tempus aliquam.</p>
+					<ul class="contact">
+						<li class="icon solid fa-envelope"><a href="#">information@untitled.tld</a></li>
+						<li class="icon solid fa-phone">(000) 000-0000</li>
+						<li class="icon solid fa-home">1234 Somewhere Road #8254<br />
+							Nashville, TN 00000-0000</li>
 					</ul>
 				</section>
 
