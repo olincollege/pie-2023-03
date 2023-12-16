@@ -26,18 +26,8 @@ We made a mechanical mirror, which is a mechanical display that displays anyone 
 ## Example Video:
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/98xqTyCnihM?si=X8l4SJlZaNW46-1X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+<br>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/2gRm41Kkecs?si=DTeYSFWUNzqtunST" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-<br>
-<br>
-</center><iframe width="560" height="315" src="https://www.youtube.com/embed/98xqTyCnihM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br>
-<i>The Mechanical Mirror Making a Heart</i>
-<br>
-<br>
-<br>
-</center><iframe width="560" height="315" src="https://www.youtube.com/embed/2gRm41Kkecs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-<br>
-<i>The Mechanical Mirror Making a Smile</i>
 <br>
 
 # How it all ties together
