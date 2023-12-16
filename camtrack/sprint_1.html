@@ -73,7 +73,7 @@
             picture-in-picture; web-share" allowfullscreen>
           </iframe>
         </div>
-        <div class="col-5">
+        <div class="col-md-5 d-flex align-items-center">
           <p>The goal for this sprint was to finish a very basic version of our final product. We assembled a cardboard structure that rotated
             a cardboard pointer around to follow a face, which we detected using a facial detection program with a Raspberry Pi and PiCamera.
           </p>
@@ -85,20 +85,18 @@
         <h3>Mechanical</h3>
         <br>
         <div class="row">
-            <div class="col-3">
+            <div class="col-3 text-center">
                 <img src="assets/mech_sprint_1.JPG" style="height:auto; width:350px;">
-                <figcaption>Sketch model of the initial design</figcaption>
+                <figcaption><b>Sketch Model of the Initial Design</b></figcaption>
             </div>
-            <div class="col-3">
+            <div class="col-3 text-center d-flex flex-column align-items-center">
               <img src="assets/mech_sprint_1_enclosure.JPG" style="height:auto; width:350px;">
-              <figcaption>Electronics enclosure box with servo attached to the rotating rod</figcaption>
-            </div>
-            <div class="col-6">
+              <figcaption><b>Electronics Enclosure Box with <br> Servo attached to the Rotating Rod</b></figcaption>
+          </div>
+            <div class="col-6 d-flex align-items-center">
                 <p>For the mechanical side of Sprint 1, we built a simple sketch model out of cardboard with a rotating 
                   PVC rod to mimic how our final product would pan around to follow a person's face. We started out using a servo to rotate the 
-                  cardboard finger mounted on top just to get proof of concept. 
-                </p>
-                <p>
+                  cardboard finger mounted on top just to get proof of concept. <br><br>
                   The sketch model also included spaces for storing electronic components near the base and a mounting spot near the 
                   top of the rod for the PiCamera.
                 </p>
@@ -110,7 +108,7 @@
       <h3>Software</h3>
       <br>
       <div class="row">
-          <div class="col">
+          <div class="col-6">
               <p> The Raspberry Pi ran a Haar Cascade classification program that could detect faces with the attached PiCamera.
                 It calculated the distance from the center of the face from the center of the camera frame and sent that distance to the Arduino
                 over Serial communication to control the servo. However, it only functioned if the user was facing the camera directly, and performed
@@ -124,13 +122,13 @@
       <h3>Electrical</h3>
       <br>
       <div class="row">
-          <div class="col-3">
+          <div class="col-3 text-center">
               <img src="assets/elec_sprint_1.jpg" style="height:auto; width:350px;">
-              <figcaption>Electrical setup of the Arduino, Raspberry Pi, PiCamera, and Servo</figcaption>
+              <figcaption><b>Electrical Connections between the Arduino, Raspberry Pi, Picamera, and Servo</b></figcaption>
           </div>
-          <div class="col-4">
-            <img src="assets/elec_sprint_1_diagram.JPG" style="height:auto; width:480px; border: 2px solid black;">
-            <figcaption>Block diagram showing wire connections between all electrical components</figcaption>
+          <div class="col-3 text-center">
+            <img src="assets/elec_sprint_1_diagram.JPG" style="height:auto; width:350px;">
+            <figcaption><b>Block Diagram showing Wire Connections <br> Between all Electrical Components</b></figcaption>
           </div>
           <div class="col-5">
               <p> In this sprint, we needed to set up all the electronic parts and make sure they all
