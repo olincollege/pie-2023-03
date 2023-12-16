@@ -40,7 +40,7 @@ We made a mechanical mirror, which is a mechanical display that displays anyone 
 
 # How it all ties together
 
-![A System diagram showing how all the different parts interconnect.](https://github.com/mcuevas-olin/pie-2023-03/blob/gh-pages/mechanical-mirror/Images/SystemDiagramFinal.jpg "System Diagram")
+![A System diagram showing how all the different parts interconnect.](https://raw.githubusercontent.com/mcuevas-olin/pie-2023-03/gh-pages/mechanical-mirror/Images/SystemDiagramFinal.jpg "System Diagram")
 
 Our system has 4 subsystems. The gantry, the VSA, the screen, and the user interaction system. The Raspberry Pi and the Arudino monitor the user interaction, perform all of the necessary computation, and send commands to the VSA and gantry. The stepper motors in the gantry move the VSA across the columns of the screen of pixels. The servos on the VSA are each able to turn the pixels in one row of the screen. By having the Raspberry Pi and and Arduino move the VSA across the screen of pixels and turn specific servos at specific times, we can display an image on the screen.
 
