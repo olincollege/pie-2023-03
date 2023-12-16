@@ -13,5 +13,8 @@ When scaling up to a 15x15 display, and adding a second vertical servo arm, the 
 In this sprint, we wanted to consolidate our power supplies, as having three separate sources of power wasn’t viable. We purchased a 5V 50W DC-DC converter that we could connect to our 12V power supply, which allowed us to get rid of the 6V AA battery pack and provided more current than we could ever need.
 We also added a shutter button for the Arduino so we could tell when the user wanted to interact with the mirror and a shutdown button so the Raspberry Pi could be cleanly power cycled.
 
+## Circuit diagram
 ![Showing the main electrical circuit](https://raw.githubusercontent.com/mcuevas-olin/pie-2023-03/gh-pages/mechanical-mirror/Images/SP3ElectricalButton.png "Main Electrical Circuit")
+
+## Planned servo circuit
 ![Showing the circuit to connect with the servos](https://raw.githubusercontent.com/mcuevas-olin/pie-2023-03/gh-pages/mechanical-mirror/Images/SP3ElectricalServos.png "Servo Circuit")
