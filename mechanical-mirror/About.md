@@ -25,4 +25,5 @@ Worked on the image processing software, pixel integration, raspberry pi camera 
 
 ## Dominic 
 *(he/him)*
+
 Worked on microcontroller, serial interface, and control software, as well as Raspberry Pi integration. Helped with electrical system design and wiring.
